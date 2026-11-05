@@ -1,0 +1,679 @@
+{
+ "_readme": "Hand-checked evaluation set (v2). For answerable questions the question and a verbatim evidence_snippet were chosen by reading source text; relevant_document_ids lists every document in documents_merged.jsonl whose whitespace-normalised text contains that snippet (re-verified by `python -m src.rag.evaluate --check-labels`). Unanswerable questions list absent_terms that must match zero documents; three pension-sounding ones have a `reason` and were judged by hand instead. Labels were authored by the assistant and have NOT been independently reviewed by a human; review before relying on the numbers.",
+ "questions": [
+  {
+   "id": "sp_ni_years",
+   "question": "How many qualifying years do I need on my National Insurance record to get any new State Pension?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "You’ll need 10 qualifying years on your National Insurance record to get any new State Pension.",
+   "relevant_document_ids": [
+    "doc_58ca994c",
+    "govuk_new-state-pension_eligibility"
+   ]
+  },
+  {
+   "id": "sp_payday",
+   "question": "Which day of the week is my State Pension paid if my National Insurance number ends in 45?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "40 to 59 | Wednesday",
+   "relevant_document_ids": [
+    "doc_0352f91f",
+    "doc_1d56dfc8",
+    "govuk_new-state-pension_when-youre-paid",
+    "govuk_state-pension_when-youre-paid"
+   ]
+  },
+  {
+   "id": "sp_defer",
+   "question": "How long do I have to defer my State Pension to get extra payments?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "You must defer your State Pension for at least 5 weeks.",
+   "relevant_document_ids": [
+    "govuk_deferring-state-pension_if-you-reached-state-pension-age-before-6-april-2016"
+   ]
+  },
+  {
+   "id": "sp_additional",
+   "question": "Who can get the Additional State Pension?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "The Additional State Pension is an extra amount of money you could get on top of your basic State Pension if you’re:",
+   "relevant_document_ids": [
+    "doc_277d1b33",
+    "govuk_additional-state-pension_overview"
+   ]
+  },
+  {
+   "id": "sp_report_change",
+   "question": "What changes must I report to the Pension Service if I get State Pension?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "moved to a new address in the UK (only tell them after you’ve moved)",
+   "relevant_document_ids": [
+    "govuk_contact-pension-service_report-changes"
+   ]
+  },
+  {
+   "id": "pc_what",
+   "question": "What is Pension Credit and who is it for?",
+   "type": "answerable",
+   "topic": "Pension Credit",
+   "evidence_snippet": "Pension Credit gives you extra money to help with your living costs if you’re over State Pension age and on a low income.",
+   "relevant_document_ids": [
+    "doc_16ca37b0",
+    "govuk_government_news_pension-credit-what-you-need-to-know--2",
+    "govuk_pension-credit_overview"
+   ]
+  },
+  {
+   "id": "pc_savings_credit",
+   "question": "Who can get the Savings Credit part of Pension Credit?",
+   "type": "answerable",
+   "topic": "Pension Credit",
+   "evidence_snippet": "You could get the ‘Savings Credit’ part of Pension Credit if both of the following apply:",
+   "relevant_document_ids": [
+    "govuk_pension-credit_what-youll-get"
+   ]
+  },
+  {
+   "id": "pc_savings_limit",
+   "question": "Do my savings affect whether I can get Pension Credit?",
+   "type": "answerable",
+   "topic": "Pension Credit",
+   "evidence_snippet": "If you have £10,000 or less in savings and investments",
+   "relevant_document_ids": [
+    "govuk_pension-credit_eligibility"
+   ]
+  },
+  {
+   "id": "wp_autoenrol",
+   "question": "How much do I need to earn to be automatically enrolled in a workplace pension?",
+   "type": "answerable",
+   "topic": "Workplace pensions",
+   "evidence_snippet": "earn more than £10,000 a year",
+   "relevant_document_ids": [
+    "govuk_government_news_automatic-enrolment-workplace-pension-saving-at-a-10-year-high",
+    "govuk_government_news_millions-more-to-be-automatically-enrolled-into-workplace-pensions",
+    "govuk_government_news_workie-says-dont-ignore-the-workplace-pension",
+    "govuk_plan-retirement-income_private-pensions"
+   ]
+  },
+  {
+   "id": "tax_lta",
+   "question": "Is there still a lifetime allowance for pensions?",
+   "type": "answerable",
+   "topic": "Pension tax",
+   "evidence_snippet": "As of 6 April 2024 there is no longer lifetime allowance.",
+   "relevant_document_ids": [
+    "hmrc_PTM024000",
+    "hmrc_PTM024100",
+    "hmrc_PTM024200",
+    "hmrc_PTM024300",
+    "hmrc_PTM024400",
+    "hmrc_PTM024500",
+    "hmrc_PTM024600",
+    "hmrc_PTM060000",
+    "hmrc_PTM061000",
+    "hmrc_PTM061100",
+    "hmrc_PTM061200",
+    "hmrc_PTM062000",
+    "hmrc_PTM062100",
+    "hmrc_PTM062200",
+    "hmrc_PTM062205",
+    "hmrc_PTM062210",
+    "hmrc_PTM062215",
+    "hmrc_PTM062220",
+    "hmrc_PTM062230",
+    "hmrc_PTM062240",
+    "hmrc_PTM062250",
+    "hmrc_PTM062300",
+    "hmrc_PTM062310",
+    "hmrc_PTM062320",
+    "hmrc_PTM062330",
+    "hmrc_PTM062340",
+    "hmrc_PTM062400",
+    "hmrc_PTM062500",
+    "hmrc_PTM062510",
+    "hmrc_PTM062520",
+    "hmrc_PTM062530",
+    "hmrc_PTM062540",
+    "hmrc_PTM062550",
+    "hmrc_PTM062560",
+    "hmrc_PTM062570",
+    "hmrc_PTM062580",
+    "hmrc_PTM062590",
+    "hmrc_PTM062600",
+    "hmrc_PTM062610",
+    "hmrc_PTM062620",
+    "hmrc_PTM062700",
+    "hmrc_PTM062701",
+    "hmrc_PTM062710",
+    "hmrc_PTM062720",
+    "hmrc_PTM062730",
+    "hmrc_PTM062740",
+    "hmrc_PTM062750",
+    "hmrc_PTM062800",
+    "hmrc_PTM063000",
+    "hmrc_PTM063100",
+    "hmrc_PTM063130",
+    "hmrc_PTM063140",
+    "hmrc_PTM063150",
+    "hmrc_PTM063200",
+    "hmrc_PTM063210",
+    "hmrc_PTM063220",
+    "hmrc_PTM063230",
+    "hmrc_PTM063240",
+    "hmrc_PTM063260",
+    "hmrc_PTM063270",
+    "hmrc_PTM063300",
+    "hmrc_PTM063400",
+    "hmrc_PTM063500",
+    "hmrc_PTM063600",
+    "hmrc_PTM063700",
+    "hmrc_PTM070000",
+    "hmrc_PTM070999",
+    "hmrc_PTM071000",
+    "hmrc_PTM071100",
+    "hmrc_PTM071200",
+    "hmrc_PTM071300",
+    "hmrc_PTM071400",
+    "hmrc_PTM071500",
+    "hmrc_PTM072000",
+    "hmrc_PTM072100",
+    "hmrc_PTM072110",
+    "hmrc_PTM072120",
+    "hmrc_PTM072199",
+    "hmrc_PTM072200",
+    "hmrc_PTM072210",
+    "hmrc_PTM072300",
+    "hmrc_PTM072310",
+    "hmrc_PTM072320",
+    "hmrc_PTM072330",
+    "hmrc_PTM072340",
+    "hmrc_PTM072350",
+    "hmrc_PTM072360",
+    "hmrc_PTM072400",
+    "hmrc_PTM072410",
+    "hmrc_PTM072420",
+    "hmrc_PTM072430",
+    "hmrc_PTM072440",
+    "hmrc_PTM072450",
+    "hmrc_PTM073000",
+    "hmrc_PTM073010",
+    "hmrc_PTM073100",
+    "hmrc_PTM073200",
+    "hmrc_PTM073300",
+    "hmrc_PTM073400",
+    "hmrc_PTM073500",
+    "hmrc_PTM073600",
+    "hmrc_PTM073700",
+    "hmrc_PTM073800",
+    "hmrc_PTM073900",
+    "hmrc_PTM164000",
+    "hmrc_PTM164100",
+    "hmrc_PTM164120",
+    "hmrc_PTM164200",
+    "hmrc_PTM164300",
+    "hmrc_PTM164400",
+    "hmrc_PTM164500",
+    "hmrc_PTM170001",
+    "hmrc_PTM171000",
+    "hmrc_PTM172000",
+    "hmrc_PTM173000",
+    "hmrc_PTM174000",
+    "hmrc_PTM174100",
+    "hmrc_PTM174200",
+    "hmrc_PTM174300",
+    "hmrc_PTM174400",
+    "hmrc_PTM174500",
+    "hmrc_PTM174600",
+    "hmrc_PTM174700",
+    "hmrc_PTM174800",
+    "hmrc_PTM175000",
+    "hmrc_PTM175100",
+    "hmrc_PTM175201",
+    "hmrc_PTM175210",
+    "hmrc_PTM175220",
+    "hmrc_PTM175230",
+    "hmrc_PTM175240",
+    "hmrc_PTM175250",
+    "hmrc_PTM175300",
+    "hmrc_PTM175310",
+    "hmrc_PTM175320",
+    "hmrc_PTM175330",
+    "hmrc_PTM175340",
+    "hmrc_PTM175350",
+    "hmrc_PTM175360",
+    "hmrc_PTM175400",
+    "hmrc_PTM175500",
+    "hmrc_PTM177000"
+   ]
+  },
+  {
+   "id": "tax_pcls",
+   "question": "Can I take a tax-free lump sum when I buy an annuity?",
+   "type": "answerable",
+   "topic": "Pension tax",
+   "evidence_snippet": "You can take a tax free lump sum of up to 25% of your pension pot when you buy an annuity.",
+   "relevant_document_ids": [
+    "govuk_government_news_pension-changes-2015"
+   ]
+  },
+  {
+   "id": "complaints_tpo",
+   "question": "What does The Pensions Ombudsman do?",
+   "type": "answerable",
+   "topic": "Complaints",
+   "evidence_snippet": "is a free, independent service that helps resolve pension complaints.",
+   "relevant_document_ids": [
+    "doc_796bd510"
+   ]
+  },
+  {
+   "id": "un_sourdough",
+   "question": "What is the best recipe for sourdough bread?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "sourdough"
+   ]
+  },
+  {
+   "id": "un_medicare",
+   "question": "What does Medicare cover for people over 65?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "Medicare"
+   ]
+  },
+  {
+   "id": "un_future_rate",
+   "question": "What will the full State Pension amount be in 2045?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "2045"
+   ]
+  },
+  {
+   "id": "un_bitcoin",
+   "question": "Should I invest my pension pot in bitcoin?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "bitcoin",
+    "cryptocurrency"
+   ]
+  },
+  {
+   "id": "sp_abroad_claim",
+   "question": "When can I claim my State Pension if I retire abroad?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "You must be within 4 months of your State Pension age to claim.",
+   "relevant_document_ids": [
+    "doc_0aaa04f8",
+    "govuk_state-pension-if-you-retire-abroad_how-to-claim"
+   ]
+  },
+  {
+   "id": "sp_work_after",
+   "question": "Can I keep working after I reach State Pension age?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "You can keep working past your State Pension age.",
+   "relevant_document_ids": [
+    "doc_d3300add",
+    "govuk_working-retirement-pension-age"
+   ]
+  },
+  {
+   "id": "sp_default_retirement",
+   "question": "Is there a default retirement age of 65 in the UK?",
+   "type": "answerable",
+   "topic": "Working and pensions",
+   "evidence_snippet": "no longer exists.",
+   "relevant_document_ids": [
+    "doc_c1e7cc4a",
+    "doc_d3300add",
+    "govuk_working-retirement-pension-age",
+    "hmrc_PTM056450"
+   ]
+  },
+  {
+   "id": "sp_defer_auto",
+   "question": "What happens if I do not claim my State Pension when I reach State Pension age?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "If you do not claim your State Pension at State Pension age, it automatically defers.",
+   "relevant_document_ids": [
+    "doc_79041dfb",
+    "govuk_deferring-state-pension_how-it-works"
+   ]
+  },
+  {
+   "id": "sp_forecast_app",
+   "question": "Can I check my State Pension forecast without using the website?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "You can also check your State Pension forecast through the HMRC app.",
+   "relevant_document_ids": [
+    "doc_270370af"
+   ]
+  },
+  {
+   "id": "sp_forecast_not_eligible",
+   "question": "Who cannot use the State Pension forecast service?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "You cannot use this service if you’re already getting your State Pension",
+   "relevant_document_ids": [
+    "doc_270370af"
+   ]
+  },
+  {
+   "id": "sp_nominate",
+   "question": "Can someone else collect my State Pension for me?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "including collecting your State Pension.",
+   "relevant_document_ids": [
+    "doc_368a2970",
+    "govuk_nominate-someone-to-collect-state-pension"
+   ]
+  },
+  {
+   "id": "sp_ipc_changes",
+   "question": "How do I report a change of address to the International Pension Centre?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "You need to report changes to your personal details (such as your address or bank details) by telephone or letter.",
+   "relevant_document_ids": [
+    "doc_9e8e8189",
+    "govuk_international-pension-centre"
+   ]
+  },
+  {
+   "id": "sp_new_men",
+   "question": "Which men reach State Pension age on or after 6 April 2016?",
+   "type": "answerable",
+   "topic": "State Pension",
+   "evidence_snippet": "you’re a man born on or after 6 April 1951",
+   "relevant_document_ids": [
+    "doc_68698498",
+    "doc_79041dfb",
+    "doc_9e8e8189",
+    "doc_d00d307c",
+    "govuk_deferring-state-pension_how-it-works",
+    "govuk_international-pension-centre",
+    "govuk_state-pension_claim-a-delayed-deferred-state-pension",
+    "govuk_state-pension_how-much-you-get"
+   ]
+  },
+  {
+   "id": "ni_voluntary_topup",
+   "question": "Can I pay voluntary National Insurance contributions to top up my State Pension?",
+   "type": "answerable",
+   "topic": "National Insurance",
+   "evidence_snippet": "You may be able to pay voluntary contributions to fill any gaps and top up your State Pension.",
+   "relevant_document_ids": [
+    "doc_8c1dbd09"
+   ]
+  },
+  {
+   "id": "ni_voluntary_cannot",
+   "question": "Who cannot pay voluntary National Insurance contributions?",
+   "type": "answerable",
+   "topic": "National Insurance",
+   "evidence_snippet": "You cannot pay voluntary contributions if you:",
+   "relevant_document_ids": [
+    "doc_8c1dbd09"
+   ]
+  },
+  {
+   "id": "ni_who_pays",
+   "question": "Who pays mandatory National Insurance?",
+   "type": "answerable",
+   "topic": "National Insurance",
+   "evidence_snippet": "You pay mandatory National Insurance if you’re 16 or over and are either:",
+   "relevant_document_ids": [
+    "doc_7eca4707"
+   ]
+  },
+  {
+   "id": "wp_how_works",
+   "question": "How are contributions to a workplace pension paid in?",
+   "type": "answerable",
+   "topic": "Workplace pensions",
+   "evidence_snippet": "A percentage of your pay is put into the pension scheme automatically every payday.",
+   "relevant_document_ids": [
+    "doc_0ff31d3f",
+    "govuk_workplace-pensions_about-workplace-pensions"
+   ]
+  },
+  {
+   "id": "wp_reenrol",
+   "question": "How often must employers re-enrol staff into a workplace pension?",
+   "type": "answerable",
+   "topic": "Workplace pensions",
+   "evidence_snippet": "Every three years you must put certain staff who have left your pension scheme back into it.",
+   "relevant_document_ids": [
+    "doc_8446a6ce"
+   ]
+  },
+  {
+   "id": "pp_dc_risk",
+   "question": "Can the value of my defined contribution pension pot go down?",
+   "type": "answerable",
+   "topic": "Private pensions",
+   "evidence_snippet": "The value of your pension pot can go up or down depending on how the investments perform.",
+   "relevant_document_ids": [
+    "doc_d66fedf5",
+    "govuk_pension-types"
+   ]
+  },
+  {
+   "id": "pp_age_55",
+   "question": "At what age can I usually take money from a personal or workplace pension?",
+   "type": "answerable",
+   "topic": "Private pensions",
+   "evidence_snippet": "it’s usually after you’re 55",
+   "relevant_document_ids": [
+    "doc_b03db532",
+    "govuk_early-retirement-pension_personal-and-workplace-pensions"
+   ]
+  },
+  {
+   "id": "pp_unauthorised",
+   "question": "How much tax do I pay on an unauthorised early pension payment?",
+   "type": "answerable",
+   "topic": "Private pensions",
+   "evidence_snippet": "If it’s unauthorised, you pay up to 55% tax on it.",
+   "relevant_document_ids": [
+    "doc_b03db532",
+    "govuk_early-retirement-pension_personal-and-workplace-pensions"
+   ]
+  },
+  {
+   "id": "pp_terminal_illness",
+   "question": "Can I take my whole pension pot as a tax-free lump sum if my life expectancy is short?",
+   "type": "answerable",
+   "topic": "Private pensions",
+   "evidence_snippet": "You may be able to take your whole pension pot as a tax-free lump sum if all of the following apply:",
+   "relevant_document_ids": [
+    "doc_b03db532",
+    "govuk_early-retirement-pension_personal-and-workplace-pensions"
+   ]
+  },
+  {
+   "id": "tax_state_pension_taxed",
+   "question": "Do I pay tax on my State Pension?",
+   "type": "answerable",
+   "topic": "Pension tax",
+   "evidence_snippet": "You’ll usually pay tax on income from your pensions. This includes your State Pension.",
+   "relevant_document_ids": [
+    "doc_93d649ba",
+    "govuk_tax-on-pension_overview"
+   ]
+  },
+  {
+   "id": "tax_personal_allowance",
+   "question": "What is the usual Personal Allowance before I pay tax on pension income?",
+   "type": "answerable",
+   "topic": "Pension tax",
+   "evidence_snippet": "this is usually £12,570",
+   "relevant_document_ids": [
+    "doc_93d649ba",
+    "govuk_tax-on-pension_overview",
+    "govuk_tax-on-pension_tax-free",
+    "govuk_tax-on-pension_taxed"
+   ]
+  },
+  {
+   "id": "tax_mpaa",
+   "question": "Why would I need to check the money purchase annual allowance?",
+   "type": "answerable",
+   "topic": "Pension tax",
+   "evidence_snippet": "if you flexibly access your pension",
+   "relevant_document_ids": [
+    "doc_a080d090",
+    "govuk_tax-on-your-private-pension_annual-allowance"
+   ]
+  },
+  {
+   "id": "tax_taper_min",
+   "question": "What is the minimum reduced annual allowance under the taper?",
+   "type": "answerable",
+   "topic": "Pension tax",
+   "evidence_snippet": "The minimum reduced annual allowance you can have has decreased to £4,000.",
+   "relevant_document_ids": [
+    "doc_fc4fa881"
+   ]
+  },
+  {
+   "id": "tax_adjusted_income",
+   "question": "What did the adjusted income threshold change to from 6 April 2020?",
+   "type": "answerable",
+   "topic": "Pension tax",
+   "evidence_snippet": "The adjusted income has increased from £150,000 to £240,000 from 6 April 2020.",
+   "relevant_document_ids": [
+    "doc_a080d090"
+   ]
+  },
+  {
+   "id": "tpo_who",
+   "question": "Who can bring a complaint to The Pensions Ombudsman?",
+   "type": "answerable",
+   "topic": "Complaints",
+   "evidence_snippet": "You can bring a complaint to us if you:",
+   "relevant_document_ids": [
+    "doc_d112b4b8"
+   ]
+  },
+  {
+   "id": "tpo_informal",
+   "question": "Should I try to sort out a pension problem informally before complaining?",
+   "type": "answerable",
+   "topic": "Complaints",
+   "evidence_snippet": "Most problems can be sorted out informally.",
+   "relevant_document_ids": [
+    "doc_dee518c1"
+   ]
+  },
+  {
+   "id": "ppf_protect",
+   "question": "What does the Pension Protection Fund do if my employer becomes insolvent?",
+   "type": "answerable",
+   "topic": "Pension Protection Fund",
+   "evidence_snippet": "We make sure members are looked after if the employer funding their pension becomes insolvent.",
+   "relevant_document_ids": [
+    "doc_b29317bc",
+    "doc_e5bf49a8"
+   ]
+  },
+  {
+   "id": "ppf_members",
+   "question": "How many people does the Pension Protection Fund protect?",
+   "type": "answerable",
+   "topic": "Pension Protection Fund",
+   "evidence_snippet": "We protect 8.6 million people across the United Kingdom who are members of defined benefit (DB) pension schemes",
+   "relevant_document_ids": [
+    "doc_e5bf49a8"
+   ]
+  },
+  {
+   "id": "un_weather",
+   "question": "What is the weather forecast for London tomorrow?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "weather forecast"
+   ]
+  },
+  {
+   "id": "un_driving_test",
+   "question": "How do I book a theory driving test?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "driving test"
+   ]
+  },
+  {
+   "id": "un_eurovision",
+   "question": "Who won the Eurovision Song Contest last year?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "Eurovision"
+   ]
+  },
+  {
+   "id": "un_diabetes",
+   "question": "What are the early symptoms of diabetes?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "diabetes"
+   ]
+  },
+  {
+   "id": "un_crypto_etf",
+   "question": "Which bitcoin fund should my SIPP buy this year?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [
+    "bitcoin",
+    "cryptocurrency"
+   ]
+  },
+  {
+   "id": "un_personal_calc",
+   "question": "If I earn £30,000 for 20 years, exactly how much pension will I get?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [],
+   "reason": "Needs personal data and a calculation; the sources give general rules only (judged by hand, not by term search)."
+  },
+  {
+   "id": "un_future_age",
+   "question": "What will my State Pension age be if I was born in 2005?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [],
+   "reason": "Depends on future legislation; the sources describe current review processes only (judged by hand, not by term search)."
+  },
+  {
+   "id": "un_tax_advice",
+   "question": "Should I move my pension abroad to pay less tax?",
+   "type": "unanswerable",
+   "topic": "out of scope / unsupported",
+   "absent_terms": [],
+   "reason": "Asks for personal financial advice, which the sources do not give (judged by hand, not by term search)."
+  }
+ ]
+}

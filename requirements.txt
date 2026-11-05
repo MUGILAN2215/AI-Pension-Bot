@@ -1,0 +1,22 @@
+# Tested with Python 3.12 (3.10+ should work).
+qdrant-client>=1.19,<2
+numpy>=2.0
+scikit-learn>=1.5
+python-dotenv>=1.0
+# Gemini (only used if you select it)
+google-genai>=1.0
+# Agent
+langgraph>=1.0
+# API
+fastapi>=0.110
+uvicorn[standard]>=0.30
+pyjwt>=2.7
+python-multipart>=0.0.9
+pypdf>=5.0
+python-docx>=1.1
+# Tests
+pytest>=8.0
+httpx>=0.27
+fpdf2>=2.7
+# Optional local semantic embeddings / reranker (needs a one-off model download; not tested by the author):
+# sentence-transformers>=3.0

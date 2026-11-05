@@ -1,0 +1,23 @@
+# One question per line (lines starting with # are ignored). These become "evidence does not answer this" examples.
+What is the best recipe for sourdough bread?
+Who won the Eurovision Song Contest last year?
+How do I book a theory driving test?
+What are the early symptoms of diabetes?
+What is the weather like in Manchester tomorrow?
+Which laptop should I buy for university?
+How do I train a puppy to sit?
+What is the capital of Australia?
+How do I change a flat tyre on my car?
+What time does the post office open on Saturdays?
+Can you recommend a good science fiction novel?
+How do I apply for a UK passport?
+What is the best way to learn Spanish quickly?
+How do I cook a roast chicken?
+Which bitcoin fund should my pension buy this year?
+If I earn £30,000 for 20 years, exactly how much pension will I get?
+What will my State Pension age be if I was born in 2005?
+Should I move my pension abroad to pay less tax?
+How much will the State Pension be worth in 2045?
+Can you tell me which pension provider will give me the highest returns?
+Is it a good idea to transfer my workplace pension into gold?
+What exact tax will I pay next year on my private pension?

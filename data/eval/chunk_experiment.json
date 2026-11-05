@@ -1,0 +1,39 @@
+{
+ "embedding": "hashing-word-1-2gram",
+ "retrieval": "hybrid",
+ "rows": [
+  {
+   "target_tokens": 250,
+   "overlap_tokens": 40,
+   "chunks": 7527,
+   "success@1": 0.38461538461538464,
+   "success@3": 0.6666666666666666,
+   "success@5": 0.7435897435897436,
+   "success@10": 0.8461538461538461,
+   "mrr": 0.5498473748473749,
+   "evidence@5": 0.6410256410256411
+  },
+  {
+   "target_tokens": 350,
+   "overlap_tokens": 55,
+   "chunks": 5553,
+   "success@1": 0.41025641025641024,
+   "success@3": 0.6666666666666666,
+   "success@5": 0.7435897435897436,
+   "success@10": 0.8461538461538461,
+   "mrr": 0.5568376068376067,
+   "evidence@5": 0.6923076923076923
+  },
+  {
+   "target_tokens": 500,
+   "overlap_tokens": 75,
+   "chunks": 4121,
+   "success@1": 0.48717948717948717,
+   "success@3": 0.7692307692307693,
+   "success@5": 0.8461538461538461,
+   "success@10": 0.8974358974358975,
+   "mrr": 0.6267399267399267,
+   "evidence@5": 0.8461538461538461
+  }
+ ]
+}

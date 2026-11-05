@@ -1,0 +1,36 @@
+{
+ "input": "/home/claude/uk-pension-ai/data/processed/documents_merged.jsonl",
+ "output": "/home/claude/uk-pension-ai/data/processed/documents_clean.jsonl",
+ "input_usable_documents": 1601,
+ "kept": 1598,
+ "excluded": [
+  {
+   "document_id": "doc_dd34a6a0",
+   "source_url": "https://www.gov.uk/csv-preview/68874ca31e72aed40611af7b/Metadata.csv",
+   "reason": "markup_noise (4 SVG/markup markers)"
+  },
+  {
+   "document_id": "doc_59b379b0",
+   "source_url": "https://www.gov.uk/csv-preview/6a673e0df02dfa8e78093902/Table_2.csv",
+   "reason": "markup_noise (4 SVG/markup markers)"
+  },
+  {
+   "document_id": "doc_efc3884c",
+   "source_url": "https://www.gov.uk/csv-preview/6a673e0d5e87122783093900/Table_6.csv",
+   "reason": "markup_noise (4 SVG/markup markers)"
+  }
+ ],
+ "sent_to_validation_review": 4,
+ "identical_text_groups": 5,
+ "documents_in_identical_text_groups": 37,
+ "largest_identical_group": 25,
+ "missing_licence": 132,
+ "missing_all_dates": 42,
+ "review_flags": {
+  "licence_not_in_source": 132,
+  "same_url_in_both_schemas_text_differs": 99,
+  "conflicting_version_in_documents_review.jsonl": 15,
+  "identical_text_different_doc_id_or_url": 36
+ },
+ "note": "Text is unchanged. Duplicates are kept and collapsed at retrieval (Retriever(dedupe=True))."
+}

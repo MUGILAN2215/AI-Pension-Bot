@@ -1,0 +1,27 @@
+.venv/
+venv/
+.env
+*.key
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+frontend/dist/
+data/qdrant/
+data/cache/
+data/app.sqlite
+data/processed/*.tmp
+*.tmp
+# large or generated data (keep out of git; use Git LFS or external storage if you must version it)
+data/raw/
+data/processed/documents_merged.jsonl
+data/processed/documents_clean.jsonl
+data/processed/chunks.jsonl
+data/processed/documents_uploads.jsonl
+data/slm/*.jsonl
+data/slm/split_ids.json
+
+.env.*
+!.env.example
+
+data/qdrant*/

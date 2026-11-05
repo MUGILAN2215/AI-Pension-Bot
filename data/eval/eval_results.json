@@ -1,0 +1,1162 @@
+{
+ "metrics": {
+  "answerable_questions": 39,
+  "success@1": 0.5897435897435898,
+  "success@3": 0.8717948717948718,
+  "success@5": 0.8717948717948718,
+  "success@10": 0.9743589743589743,
+  "recall@1": 0.3709070663296015,
+  "recall@3": 0.7245395449620802,
+  "recall@5": 0.7501805706031058,
+  "recall@10": 0.8723365836041893,
+  "evidence@1": 0.5641025641025641,
+  "evidence@3": 0.8717948717948718,
+  "evidence@5": 0.8717948717948718,
+  "evidence@10": 0.9743589743589743,
+  "mrr": 0.7222934472934472
+ },
+ "abstention": {
+  "unanswerable_questions": 12,
+  "abstained": 0,
+  "answerable_wrongly_abstained": 0,
+  "min_score_threshold": 0.3
+ },
+ "answerable": [
+  {
+   "id": "sp_ni_years",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7790871253187917,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_payday",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 4,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.25,
+    "3": 0.75,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7573373554384963,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_defer",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7899915151423711,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_additional",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7792826571062981,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_report_change",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.8072522139852898,
+   "answer_status": "ok"
+  },
+  {
+   "id": "pc_what",
+   "topic": "Pension Credit",
+   "status": "ok",
+   "n_relevant": 3,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.3333333333333333,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7685924473360515,
+   "answer_status": "ok"
+  },
+  {
+   "id": "pc_savings_credit",
+   "topic": "Pension Credit",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 2,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7586783468399902,
+   "answer_status": "ok"
+  },
+  {
+   "id": "pc_savings_limit",
+   "topic": "Pension Credit",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.786818087100374,
+   "answer_status": "ok"
+  },
+  {
+   "id": "wp_autoenrol",
+   "topic": "Workplace pensions",
+   "status": "ok",
+   "n_relevant": 4,
+   "first_relevant_rank": 3,
+   "recall": {
+    "1": 0.0,
+    "3": 0.25,
+    "5": 0.25,
+    "10": 0.75
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7851218681284576,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tax_lta",
+   "topic": "Pension tax",
+   "status": "ok",
+   "n_relevant": 142,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.007042253521126761,
+    "3": 0.007042253521126761,
+    "5": 0.007042253521126761,
+    "10": 0.02112676056338028
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7335076195681469,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tax_pcls",
+   "topic": "Pension tax",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 3,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7265080202979587,
+   "answer_status": "ok"
+  },
+  {
+   "id": "complaints_tpo",
+   "topic": "Complaints",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 3,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7970523084167647,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_abroad_claim",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7793055168755592,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_work_after",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 0.5,
+    "5": 0.5,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.799173696980892,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_default_retirement",
+   "topic": "Working and pensions",
+   "status": "ok",
+   "n_relevant": 4,
+   "first_relevant_rank": 8,
+   "recall": {
+    "1": 0.0,
+    "3": 0.0,
+    "5": 0.0,
+    "10": 0.5
+   },
+   "success": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "top_score": 0.7593391545776932,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_defer_auto",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7556921364451852,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_forecast_app",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 2,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7687654827365158,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_forecast_not_eligible",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7703570128101669,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_nominate",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.8237348551557528,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_ipc_changes",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 2,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7311921156504834,
+   "answer_status": "ok"
+  },
+  {
+   "id": "sp_new_men",
+   "topic": "State Pension",
+   "status": "ok",
+   "n_relevant": 8,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.125,
+    "3": 0.25,
+    "5": 0.25,
+    "10": 0.25
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7353661579362205,
+   "answer_status": "ok"
+  },
+  {
+   "id": "ni_voluntary_topup",
+   "topic": "National Insurance",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7680917942763388,
+   "answer_status": "ok"
+  },
+  {
+   "id": "ni_voluntary_cannot",
+   "topic": "National Insurance",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 2,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7798624128154437,
+   "answer_status": "ok"
+  },
+  {
+   "id": "ni_who_pays",
+   "topic": "National Insurance",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7546935537869015,
+   "answer_status": "ok"
+  },
+  {
+   "id": "wp_how_works",
+   "topic": "Workplace pensions",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 3,
+   "recall": {
+    "1": 0.0,
+    "3": 0.5,
+    "5": 0.5,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7190366195051671,
+   "answer_status": "ok"
+  },
+  {
+   "id": "wp_reenrol",
+   "topic": "Workplace pensions",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": null,
+   "recall": {
+    "1": 0.0,
+    "3": 0.0,
+    "5": 0.0,
+    "10": 0.0
+   },
+   "success": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": false
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": false
+   },
+   "top_score": 0.7689183400809398,
+   "answer_status": "ok"
+  },
+  {
+   "id": "pp_dc_risk",
+   "topic": "Private pensions",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7107088747576522,
+   "answer_status": "ok"
+  },
+  {
+   "id": "pp_age_55",
+   "topic": "Private pensions",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 0.5,
+    "5": 0.5,
+    "10": 0.5
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7535624413279641,
+   "answer_status": "ok"
+  },
+  {
+   "id": "pp_unauthorised",
+   "topic": "Private pensions",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 10,
+   "recall": {
+    "1": 0.0,
+    "3": 0.0,
+    "5": 0.0,
+    "10": 0.5
+   },
+   "success": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "top_score": 0.7818294540856494,
+   "answer_status": "ok"
+  },
+  {
+   "id": "pp_terminal_illness",
+   "topic": "Private pensions",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 2,
+   "recall": {
+    "1": 0.0,
+    "3": 0.5,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7679804704501414,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tax_state_pension_taxed",
+   "topic": "Pension tax",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 2,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7710165331820339,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tax_personal_allowance",
+   "topic": "Pension tax",
+   "status": "ok",
+   "n_relevant": 4,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.25,
+    "3": 0.5,
+    "5": 0.75,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7693305670505685,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tax_mpaa",
+   "topic": "Pension tax",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 0.5,
+    "3": 0.5,
+    "5": 0.5,
+    "10": 0.5
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7979648912087111,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tax_taper_min",
+   "topic": "Pension tax",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7719406319847026,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tax_adjusted_income",
+   "topic": "Pension tax",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 9,
+   "recall": {
+    "1": 0.0,
+    "3": 0.0,
+    "5": 0.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "top_score": 0.6987356938741784,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tpo_who",
+   "topic": "Complaints",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.8025759509823731,
+   "answer_status": "ok"
+  },
+  {
+   "id": "tpo_informal",
+   "topic": "Complaints",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 1,
+   "recall": {
+    "1": 1.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": true,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7998524517476818,
+   "answer_status": "ok"
+  },
+  {
+   "id": "ppf_protect",
+   "topic": "Pension Protection Fund",
+   "status": "ok",
+   "n_relevant": 2,
+   "first_relevant_rank": 6,
+   "recall": {
+    "1": 0.0,
+    "3": 0.0,
+    "5": 0.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": false,
+    "5": false,
+    "10": true
+   },
+   "top_score": 0.7961405759512956,
+   "answer_status": "ok"
+  },
+  {
+   "id": "ppf_members",
+   "topic": "Pension Protection Fund",
+   "status": "ok",
+   "n_relevant": 1,
+   "first_relevant_rank": 3,
+   "recall": {
+    "1": 0.0,
+    "3": 1.0,
+    "5": 1.0,
+    "10": 1.0
+   },
+   "success": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "evidence_hit": {
+    "1": false,
+    "3": true,
+    "5": true,
+    "10": true
+   },
+   "top_score": 0.7655939409298066,
+   "answer_status": "ok"
+  }
+ ],
+ "unanswerable": [
+  {
+   "id": "un_sourdough",
+   "top_score": 0.5312870374242077,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_medicare",
+   "top_score": 0.593299641939919,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_future_rate",
+   "top_score": 0.7128135540557186,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_bitcoin",
+   "top_score": 0.6652819324023912,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_weather",
+   "top_score": 0.5570283425064874,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_driving_test",
+   "top_score": 0.5905907401216712,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_eurovision",
+   "top_score": 0.542765221539736,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_diabetes",
+   "top_score": 0.5625547179347185,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_crypto_etf",
+   "top_score": 0.6368395301400186,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_personal_calc",
+   "top_score": 0.6943991611123979,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_future_age",
+   "top_score": 0.6886868584736341,
+   "answer_status": "ok",
+   "citations_returned": 5
+  },
+  {
+   "id": "un_tax_advice",
+   "top_score": 0.7128609411220231,
+   "answer_status": "ok",
+   "citations_returned": 5
+  }
+ ],
+ "config": {
+  "embedding": "hashing-word-1-2gram",
+  "chunking": {
+   "target_tokens": 500,
+   "overlap_tokens": 75,
+   "version": "1"
+  },
+  "collection": "uk_pension_chunks"
+ }
+}

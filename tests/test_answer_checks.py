@@ -79,3 +79,14 @@ def test_fallback_header_and_disclaimer_are_honest():
     own = "You need 10 years [1]. Note: this is general information, not personal financial advice."
     text = AnswerGenerator(Fixed(own), min_score=0.1).answer("q", RetrievalResult("q", "ok", [ev("You need 10 years.")])).text
     assert text.count("general information") == 1  # the model's own disclaimer is not repeated
+
+
+def test_phantom_citation_stripped_preserving_valid_answer():
+    # Model cites real passage [1], but also hallucinates phantom [6] on note
+    r = RetrievalResult("q", "ok", [ev("You need 10 years.")])  # only 1 passage
+    reply = "You need 10 years [1]. Note: this is general information [6]."
+    ans = AnswerGenerator(Fixed(reply), min_score=0.1).answer("q", r)
+    assert ans.status == "ok" and ans.mode == "generated"
+    assert "[1]" in ans.text and "[6]" not in ans.text
+    assert len(ans.citations) == 1
+

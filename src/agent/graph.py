@@ -441,10 +441,11 @@ REWRITE_SYSTEM = (
     "1. GREETING STRIPPING: If the message starts with or includes conversational greetings/fluff (e.g. 'Hey, hi, good morning bot, can you clarify...'), "
     "strip the greeting completely and preserve the underlying question.\n"
     "2. CONTEXT RESOLUTION: If the message is a follow-up, resolve all pronouns and references ('it', 'they', 'them', 'my spouse', 'those years') using the earlier conversation.\n"
-    "3. SIMPLIFICATION / EXAMPLES: If the user asks for a simpler explanation or an example, formulate it as a clear request for simplification.\n"
-    "4. LANGUAGE: If the message is Tamil or Tanglish (Tamil written in English letters), translate it into plain English "
+    "3. PRESERVE NUMBERS & SPECIFIC AMOUNTS: Always preserve specific numbers, qualifying years, ages, dates, and currency amounts (e.g. keep '9 years', '10 years', 'age 66', '£200'). Never drop, generalize, or round these numbers.\n"
+    "4. SIMPLIFICATION / EXAMPLES: If the user asks for a simpler explanation or an example, formulate it as a clear request for simplification.\n"
+    "5. LANGUAGE: If the message is Tamil or Tanglish (Tamil written in English letters), translate it into plain English "
     "(e.g. 'vanakkam, state pension age enna?' becomes 'What is the State Pension age?').\n"
-    "5. OFF-TOPIC: If the user message is completely unrelated or changes the subject, do not force the previous topic into it.\n"
+    "6. OFF-TOPIC: If the user message is completely unrelated or changes the subject, do not force the previous topic into it.\n"
     "Do not answer the question. Do not add facts. Output the refined question only."
 )
 
@@ -672,7 +673,7 @@ class PensionAgent:
         # 3. Check if following up on a refusal / unanswerable topic
         if history and len(history) >= 2:
             last_assistant = history[-1].get("content", "")
-            if is_refusal(last_assistant) or "do not contain information" in last_assistant.lower():
+            if (is_refusal(last_assistant) and len(last_assistant) < 350) or "do not contain information" in last_assistant.lower():
                 if any(w in raw_clean for w in ("simpler", "explain", "why", "example", "mean", "understand", "clarif")):
                     return {"route": "explain_refusal", "steps": s["steps"] + ["route: explain refusal in simple terms"]}
 
@@ -733,7 +734,8 @@ class PensionAgent:
         msg = (
             "In simple terms: I'm a specialist guide that only uses official **GOV.UK and HMRC** records about "
             "UK State Pensions, Pension Credit, and National Insurance.\n\n"
-            "• I do not have information on private investments like Bitcoin, cryptocurrencies, or individual company shares.\n"
+            "• I can only answer questions that are covered by the official UK pension and benefits sources in my knowledge base.\n"
+            "• For topics outside these official sources (such as unindexed private schemes or specific financial advice), I cannot provide answers.\n"
             "• By law, only FCA-regulated advisers can recommend where to invest your personal pension pot.\n\n"
             "💡 If you're looking for free, government-backed guidance on private pensions and investments, "
             "you can check **[MoneyHelper](https://www.moneyhelper.org.uk)** or speak to an FCA-authorised financial adviser."
@@ -785,7 +787,7 @@ class PensionAgent:
         ans = self.generator.answer(s["rewritten"], s["retrieval"])
         calc = s.get("calc")
         if calc is not None:
-            generator_refused = ans.status != "ok" or is_refusal(ans.text) or "do not contain information" in ans.text.lower()
+            generator_refused = ans.status != "ok" or (is_refusal(ans.text) and len(ans.text) < 350) or "do not contain information" in ans.text.lower()
             if not generator_refused:
                 ans.text = f"Calculation: {calc.message}\n\n{ans.text}"
             else:
